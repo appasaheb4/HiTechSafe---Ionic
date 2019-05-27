@@ -1,0 +1,63 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>All</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >  
+     <ion-refresher (ionRefresh)="doRefresh($event);">
+    <ion-refresher-content 
+      pullingText="Pull to refresh"
+      pullingIcon="refresh-circle"
+      refreshingSpinner="circles"
+      refreshingText="..fetching">
+    </ion-refresher-content>   
+ </ion-refresher>
+    <div class="well fullDiv tableView">  
+        <table class="table table-hover table-fixed table-bordered ">
+            <caption></caption>  
+            <thead>
+                <tr class="blockcolor">
+                    <th>Vehicle Name</th>  
+                    <th>Stauts</th>
+                    <th>Ignition</th>
+                    <th>Speed</th>
+                    <th>ODO</th>
+                    <th>Battery_Vott</th>
+                    <th>Address                      </th>
+                    <th>Vehicle Type            </th>
+                    <th>IMEI</th>
+                    <th>Mobile No</th>
+                    <th>DOI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of getLocalAllData; let i=index">
+                    <td>{{item.VehicleName}}</td>
+                    <td *ngIf="item.Digital_2_input_status==0">Idel</td>
+                    <td *ngIf="item.Digital_2_input_status==1">Running</td>
+                    <td *ngIf="item.Digital_2_input_status==0">OFF</td>
+                    <td *ngIf="item.Digital_2_input_status==1">ON</td>
+                    <td>{{item.Speed}}</td>
+                    <td>{{item.Odometer}}</td>  
+                    <td>{{item.Main_Battery_Voltage}}</td>
+                    <td>{{item.address}}</td>
+                    <td>{{item.VehicleType}}</td>
+                    <td>{{item.IMEI}}</td>
+                    <td>{{item.MobileNo}}</td>
+                    <td>{{item.Date}}</td>    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</ion-content>
+
+<ion-footer class="fotterColor">     
+      <button ion-button icon-only block  color="whiteColor" clear end (click)="getPrintDataAgain()">
+                        <ion-icon ios="ios-print" md="md-print"></ion-icon>
+                </button>  
+   
+</ion-footer>

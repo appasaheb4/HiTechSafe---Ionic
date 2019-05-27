@@ -1,0 +1,59 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "io.ionic.hitechsafe.year2018"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.ionic.hitechsafe.year2018"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "io.ionic.hitechsafe.year2018"
+    },
+    "cordova-plugin-file-opener2": {
+      "PACKAGE_NAME": "io.ionic.hitechsafe.year2018"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "io.ionic.hitechsafe.year2018"
+    },
+    "cordova-plugin-filepath": {
+      "PACKAGE_NAME": "io.ionic.hitechsafe.year2018"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "io.ionic.hitechsafe.year2018"
+    },
+    "cordova-plugin-googlemaps": {
+      "API_KEY_FOR_ANDROID": "AIzaSyBGau8wQpNV9XDR76vApE_O3A_KFTcVg9E",
+      "PACKAGE_NAME": "io.ionic.hitechsafe.year2018"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "io.ionic.hitechsafe.year2018"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "io.ionic.hitechsafe.year2018"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.ionic.hitechsafe.year2018"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PACKAGE_NAME": "io.ionic.hitechsafe.year2018"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "io.ionic.hitechsafe.year2018"
+    },
+    "mx.ferreyra.callnumber": {
+      "PACKAGE_NAME": "io.ionic.hitechsafe.year2018"
+    }
+  },
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "io.ionic.hitechsafe.year2018"
+    }
+  }
+}

@@ -1,2 +1,0 @@
-# HiTechSafe---Ionic
-Ahmednagar -Client

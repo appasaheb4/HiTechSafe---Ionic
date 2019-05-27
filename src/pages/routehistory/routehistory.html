@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Route History</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content class="fullBody">
+    <form [formGroup]="roadHistryForm">
+        <ion-item class="bgTrnasp">      
+            <ion-label color="blockcolor">Vehicle Name</ion-label>
+            <ion-select formControlName="data.vehicleName"   [(ngModel)]="data.vehicleName">      
+                <ion-option *ngFor="let item of allVehileName" value="{{item.IMANo}}" checked="false">{{item.VehicleName}}-{{item.IMANo}}</ion-option>
+            </ion-select>           
+        </ion-item>
+        <ion-item class="bgTrnasp">
+            <ion-label color="blockcolor">Form Date</ion-label>
+            <ion-datetime displayFormat="DD-MM-YYYY" max="{{maxYear}}"     formControlName="data.formdate"  [(ngModel)]="data.formdate" ></ion-datetime>
+        </ion-item>
+        <ion-item class="bgTrnasp">
+            <ion-label color="blockcolor">To Date</ion-label>
+            <ion-datetime displayFormat="DD-MM-YYYY" max="{{maxYear}}"    formControlName="data.toDate"  [(ngModel)]="data.toDate" ></ion-datetime>
+        </ion-item>   
+        <ion-item no-lines class="bgTrnasp">   
+            <button ion-button color="appcolor" full (click)="showGridData()" >Show on Grid</button>
+        </ion-item>
+    </form>  
+</ion-content>

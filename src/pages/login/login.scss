@@ -1,0 +1,25 @@
+page-login {
+
+     .contentListItem{
+       background-color: transparent;
+    }
+    .loginIcon{
+        height: 180px;   
+        width: 180px;
+        display: block;
+         margin: 0 auto;
+         margin-bottom: 22px;
+    } 
+    
+    .loginPage {
+  background-color: #03CCF2;
+     background-size: 100% 100%;
+}
+
+    .loginDiv .contentListItem{
+           opacity: 0.6;   
+           background-color: black;
+           color: white;
+           filter: alpha(opacity=40);   
+    }
+}

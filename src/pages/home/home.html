@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="launchDialer()"><ion-icon name="call"></ion-icon></button>
+        <button ion-button icon-only (click)="regularShareMenu()"><ion-icon name="share"></ion-icon></button>
+        <button ion-button icon-only><ion-icon name="more"></ion-icon></button>
+        </ion-buttons>
+  </ion-navbar>
+</ion-header>  
+
+<ion-content class="fullBody">
+     <ion-grid no-lines>
+        <ion-row no-lines>       
+            <ion-col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 no-lines >
+                <div class="form-group coverImage">
+                <img  src="{{coverImage}}"  class="thisCoverImage " />
+                <div class="clearfix"> </div>
+                </div>
+                <div text-center class="form-group">
+                     <img src="{{base64Image}}"  class="proPhoto img-circle" /><br/>
+                     <div class="clearfix"></div>
+                </div>   
+            </ion-col>      
+        </ion-row>
+    </ion-grid> 
+  <ion-grid>
+      
+      
+  <ion-row padding>
+    <ion-col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 class="grid1 colIcon" (click)="openPage(gridView);">   
+             <img src="http://demo.winwaytechnology.in/ionicapp/Content/Images/AppImages/HomePage/homeGrid.png" class="prodImage" alt="proName"/>
+             <h5 class="title text-center">GridView</h5>   
+    </ion-col>    
+       <ion-col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 class="grid2" (click)="openPage(mapView);">
+             <img src="http://demo.winwaytechnology.in/ionicapp/Content/Images/AppImages/HomePage/homeMapView.png" class="prodImage" alt="mapview"/>
+             <h5 class="title text-center">MapView</h5>   
+       </ion-col>
+        <ion-col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 class="grid3" (click)="openPage(report);">
+             <img src="http://demo.winwaytechnology.in/ionicapp/Content/Images/AppImages/HomePage/homeReport.png" class="prodImage" alt="proName"/>
+             <h5 class="title text-center">Report</h5>    
+    </ion-col> 
+  </ion-row>
+      <ion-row padding>
+       <ion-col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 class="grid5 colIcon" (click)="openPage(routeHistory);">
+             <img src="http://demo.winwaytechnology.in/ionicapp/Content/Images/AppImages/HomePage/homerouteDist.png" class="prodImage" alt="proName"/>
+             <h5 class="title text-center">Route History</h5>   
+    </ion-col>
+      </ion-row>
+</ion-grid>
+</ion-content>

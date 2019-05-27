@@ -1,0 +1,36 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Sign In</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content  class="loginPage">
+     <br/>  
+         <img src="http://demo.winwaytechnology.in/ionicapp/Content/Images/AppImages/LoginPage/splash.png" alt="icon" class="img-responsive loginIcon loginIcon"/>
+    
+    <div class="well" padding class="loginDiv">  
+        <form [formGroup]="loginForm">
+        <ion-list class="contentListItem">   
+            <ion-item class="contentListItem ">    
+                <ion-input type="text" placeholder="User Name" class="contentListItem contentListItem"  formControlName="this.data.userName" [(ngModel)]="this.data.userName"></ion-input>
+            </ion-item>  
+            <ion-item class="contentListItem">
+                <ion-input type="password" placeholder="Password" class="contentListItem contentListItem"  formControlName="this.data.password" [(ngModel)]="this.data.password"></ion-input>
+            </ion-item>
+            <ion-item no-lines class="contentListItem">    
+                <button ion-button color="appcolor" full (click)="login();" [disabled]="!loginForm.valid" >Login</button>      
+            </ion-item>  
+            <ion-item no-lines class="contentListItem">
+                <button ion-button  color="appcolor" clear (click)="emailSent();" full>Forgot Password</button>
+            </ion-item>
+        </ion-list>
+        </form>
+            
+    </div>   
+    
+    
+
+</ion-content>

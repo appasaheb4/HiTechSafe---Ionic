@@ -1,0 +1,8 @@
+{
+  "name": "hitechsafe",
+  "app_id": "b45edd2e",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

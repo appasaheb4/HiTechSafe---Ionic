@@ -1,0 +1,42 @@
+page-report {
+     .fullBody{
+    background-image: url("http://demo.winwaytechnology.in/ionicapp/Content/Images/AppImages/Global/applicationBackgound.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+ ion-row{
+        margin-bottom: 10px;
+    }
+ ion-col {    
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-shadow: rgba(0,0,0,0.8) 0 0 1px;  
+        
+    }
+    .prodImage{
+       width: 80px;
+       height: 80px;
+       display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    }
+    .title{
+        color: white;
+    }
+    .grid1{
+        background-color: #F0AD4E;
+    }
+    .grid2{
+        background-color: #5d8aa8;
+    }
+    .grid3{
+        background-color: #e32636;
+    }
+    .grid4{
+        background-color: #9966cc;
+    }
+     .grid5{
+        background-color: #8db600;
+    }
+}

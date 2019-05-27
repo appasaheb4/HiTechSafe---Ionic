@@ -1,0 +1,39 @@
+
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Idel</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="fullBody">
+    <form [formGroup]="reportIdel">  
+        <ion-item class="bgTrnasp">   
+            <ion-label color="blockcolor" >Vehicle Name</ion-label>
+            <ion-select formControlName="data.vehicleName"   [(ngModel)]="data.vehicleName" ion-end>      
+                <ion-option *ngFor="let item of allVehileName" value="{{item.IMANo}}" checked="false">{{item.VehicleName}}-{{item.IMANo}}</ion-option>
+            </ion-select>              
+        </ion-item>
+        <ion-item class="bgTrnasp">
+            <ion-label color="blockcolor" class="firstLable">Form Date</ion-label>
+            <ion-datetime displayFormat="DD-MM-YYYY" max="{{maxYear}}"     formControlName="data.formdate"  [(ngModel)]="data.formdate" ion-end ></ion-datetime>
+        </ion-item>
+        <ion-item class="bgTrnasp">
+            <ion-label color="blockcolor" class="firstLable">To Date</ion-label>
+            <ion-datetime displayFormat="DD-MM-YYYY" max="{{maxYear}}"    formControlName="data.toDate"  [(ngModel)]="data.toDate" ion-end></ion-datetime>
+        </ion-item> 
+        <ion-item class="bgTrnasp">
+            <ion-label color="blockcolor" class="firstLable">From Mins</ion-label>
+            <ion-input type="number" placeholder="Mins in numbers"  formControlName="data.fromMins" [(ngModel)]="data.fromMins" ion-end></ion-input>
+        </ion-item> 
+        <ion-item class="bgTrnasp"> 
+            <ion-label color="blockcolor" class="firstLable">To Mins</ion-label>
+            <ion-input type="number" placeholder="Mins in number"  formControlName="data.toMins" [(ngModel)]="data.toMins" ion-end></ion-input>
+        </ion-item> 
+        <ion-item no-lines class="bgTrnasp">   
+            <button ion-button color="appcolor" full (click)="showGridData()" [disabled]="!reportIdel.valid" >Show on Grid</button>
+        </ion-item>
+    </form>
+</ion-content>

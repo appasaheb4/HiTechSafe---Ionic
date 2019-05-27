@@ -1,0 +1,44 @@
+
+<ion-header>
+<ion-navbar>
+    <ion-title>Speed  Data</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="well fullDiv tableView">  
+        <table class="table table-hover table-fixed table-bordered ">
+            <caption></caption>  
+            <thead>    
+                <tr class="blockcolor">
+                    <th>VehicleName</th>  
+                    <th>Date&Time     </th>
+                    <th>Address          </th>
+                    <th>Speed</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    
+                </tr>  
+            </thead>   
+            <tbody>
+                <tr *ngFor="let item of getSpeedData; let i=index">
+                    <td>{{item.VehicleName}}</td>
+                    <td >{{item.DateTime}}</td>
+                    <td>{{item.Address}}</td>
+                    <td>{{item.Speed}}</td>
+                    <td>{{item.lat}}</td>
+                    <td>{{item.lag}}</td>
+                    
+                   
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</ion-content>
+<ion-footer class="fotterColor">     
+      <button ion-button icon-only block  color="whiteColor" clear end (click)="getPrintDataAgain()">
+                        <ion-icon ios="ios-print" md="md-print"></ion-icon>
+                </button>  
+   
+</ion-footer>

@@ -1,0 +1,22 @@
+page-reportidelshowdata {
+ .table-fixed{
+        tbody{
+            overflow-y:auto;
+            overflow-x: auto;
+        }   
+    }
+        
+    .tableView{
+        overflow-x: auto;
+        overflow-y: auto;
+        margin-top: -37px;
+        margin-left: -22px;
+    }
+    .blockcolor{
+        background-color: black;
+        color: white;
+    }
+    .fotterColor{
+        background-color: #3F51B5;
+    }
+}

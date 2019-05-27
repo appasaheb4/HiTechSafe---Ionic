@@ -1,0 +1,37 @@
+page-profile {
+    .fullBody{
+    background-image: url("http://demo.winwaytechnology.in/ionicapp/Content/Images/AppImages/Global/applicationBackgound.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.thisCoverImage{
+    height: 150px;
+    width: 100%;
+}
+
+.bgTrnasp{
+    background-color: transparent;
+}
+.coverImage{
+    margin: 0;
+    padding: 0;
+    margin-top: -15px;
+}
+.btnCoverImage{
+    margin: 0;
+    padding: 0;
+    margin-top: -150px; 
+}
+.proPhoto{
+        height: 100px;
+        width: 100px;
+        margin-top: -60px;
+    }   
+    .btnCoverImage{
+        float: right;
+    }
+    .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner {
+        border-bottom-color: #DEDEDE !important;
+        box-shadow: none !important;
+    }
+}
